@@ -7,6 +7,7 @@ import { Profiles } from "./components/Profiles";
 import { Achievements } from "./components/Achievements";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Projects } from "./components/Projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Banner />
       <Skills />
       <Profiles />
+      <Projects />
       <Achievements />
       <Contact />
       <Footer />
