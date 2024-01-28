@@ -228,7 +228,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+/***/
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media only screen and (max-width: 768px) {
+  nav.navbar .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
 
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px;
+  }
+
+  nav.navbar .navbar-toggler {
+    margin-top: 10px;
+  }
+
+  span.navbar-text {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .social-icon {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navbar-text button {
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  
+  nav.navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-text button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .social-icon a {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+}
+/* ********************************** */
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -498,6 +550,22 @@ ul.achievements-list li::before {
 
 ul.achievements-list li:last-child {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .achievements-bx {
+    text-align: center;
+  }
+.achievements h2{
+  font-size: 40px;
+}
+  .achievements-list {
+    padding-left: 0;
+  }
+
+  .background-image-left {
+    display: none; 
+  }
 }
 
 .contact {

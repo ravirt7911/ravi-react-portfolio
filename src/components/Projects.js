@@ -10,35 +10,35 @@ import colorSharp1 from "../assets/img/color-sharp.png";
 export const Projects = () => {
   const projects = [
     {
-      title: "Leetcode",
-      description: "Highest Rating-1755 Solved 200+ Problems",
+      title: "PoolPay",
+      description: "Officia elit in id et. Ipsum qui amet pariatur pariatur ea labore pariatur incididunt consectetur proident ad. Exercitation reprehenderit aliquip esse nulla est sunt velit enim sint. Pariatur voluptate irure aliquip magna occaecat aliquip nulla velit commodo deserunt.",
       imgUrl: projImg1,
-      url: "https://leetcode.com/ravi__7__/",
+      url: "https://github.com/ravirt7911/Pool-Pay",
     },
     {
-      title: "Codechef",
-      description: "Highest Rating-1695(3⭐) Solved 300+ Problems",
+      title: "FULLSTACK FARM-STACK ",
+      description: "Officia elit in id et. Ipsum qui amet pariatur pariatur ea labore pariatur incididunt consectetur proident ad. Exercitation reprehenderit aliquip esse nulla est sunt velit enim sint. Pariatur voluptate irure aliquip magna occaecat aliquip nulla velit commodo .",
       imgUrl: projImg2,
       url: "https://www.codechef.com/users/ravi7911",
     },
     {
-      title: "Codeforces",
-      description: "Highest Rating-1029 Solved 50+ Problems",
+      title: "UI Schema to form generator",
+      description: "Officia elit in id et. Ipsum qui amet pariatur pariatur ea labore pariatur incididunt consectetur proident ad. Exercitation reprehenderit aliquip esse nulla est sunt velit enim sint. Pariatur voluptate irure aliquip magna occaecat aliquip nulla velit commodo deserunt.",
       imgUrl: projImg3,
-      url: "https://codeforces.com/profile/ravi_7911",
+      url: "https://github.com/ravirt7911/UI-Schema-To-Form-Generator",
     },
     {
-      title: "HackerRank",
+      title: "Chatellite chat app",
       description:
-        "Python-5⭐ Problem Solving(Basic and Intermediate)Certified",
+        "Officia elit in id et. Ipsum qui amet pariatur pariatur ea labore pariatur incididunt consectetur proident ad. Exercitation reprehenderit aliquip esse nulla est sunt velit enim sint. Pariatur voluptate irure aliquip magna occaecat aliquip nulla velit commodo deserunt.",
       imgUrl: projImg4,
-      url: "https://www.hackerrank.com/ravirt7911?hr_r=1",
+      url: "https://github.com/ravirt7911/chatellite-chat-app",
     },
     {
-      title: "Github",
-      description: "My Projects",
+      title: "Blog Website",
+      description: "Officia elit in id et. Ipsum qui amet pariatur pariatur ea labore pariatur incididunt consectetur proident ad. Exercitation reprehenderit aliquip esse nulla est sunt velit enim sint. Pariatur voluptate irure aliquip magna occaecat aliquip nulla velit commodo deserunt.",
       imgUrl: projImg5,
-      url: "https://github.com/ravirt7911",
+      url: "https://github.com/ravirt7911/blogwebsite-project-firebase",
     },
   ];
 

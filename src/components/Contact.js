@@ -21,26 +21,33 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+  const resetForm = () => {
+    setFormDetails(formInitialDetails);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setButtonText("Sending");
+    const formData = new FormData(event.target);
+    const formEl=document.getElementById('form');
+    formData.append("access_key", "1e253347-17b9-49a1-83e7-edeb9b6eddbf");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
+        Accept: "application/json"
       },
-      body: JSON.stringify(formDetails),
-    });
+      body: json
+    }).then((res) => res.json())
+    .catch((err) => {console.error(err);});
     setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        succes: false,
-        message: "Something went wrong, please try again later.",
-      });
+    if (res.success) {
+      console.log("Success", res);
+      resetForm();
     }
   };
 
@@ -53,12 +60,13 @@ export const Contact = () => {
           </Col>
           <Col md={6}>
             <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="form">
               <Row>
                 <Col sm={12} className="px-1">
                   <input
                     type="text"
                     value={formDetails.fullname}
+                    name="FullName"
                     placeholder="Full Name"
                     onChange={(e) => onFormUpdate("fullname", e.target.value)}
                   />
@@ -67,6 +75,7 @@ export const Contact = () => {
                   <input
                     type="email"
                     value={formDetails.email}
+                    name="email"
                     placeholder="Email"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
@@ -75,6 +84,7 @@ export const Contact = () => {
                   <input
                     type="tel"
                     value={formDetails.phone}
+                    name="phone"
                     placeholder="Phone"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
@@ -84,6 +94,7 @@ export const Contact = () => {
                     row="6"
                     value={formDetails.message}
                     placeholder="Message"
+                    name="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
                   <button type="submit">
