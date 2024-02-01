@@ -9,7 +9,13 @@ import cv from "../assets/cv.pdf";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "CS Student", "Competetive Programmer"];
+  const toRotate = [
+    "Fullstack Developer",
+    "Tech Evangelist",
+    "Competetive Programmer",
+    "Data Analyst",
+    "Machine Learning Engineer",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -69,17 +75,16 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    As a passionate computer science undergraduate, I love
-                    coding and using technology to solve real-world problems. I
-                    enjoy diving deep into programming intricacies, be it
-                    competitive coding or application development. Proficient in
-                    C++ and Python, I constantly seek opportunities to expand my
-                    knowledge in various tech domains. Writing technical content
-                    and staying updated with emerging technologies are my
-                    hobbies. Currently, I'm exploring data analytics and machine
-                    learning through active project work. Additionally, I have
-                    experience in cloud computing and a strong desire to explore
-                    other exciting tech areas.
+                    Passionate data scientist and machine learning specialist
+                    skilled in Python for analytics, modeling, and using tools
+                    like Pandas, NumPy, Seaborn, scikit-learn, TensorFlow, and
+                    Keras. Experienced in SQL/NoSQL databases, end-to-end ML
+                    pipelines, and deployment. Enthusiastic problem-solver with
+                    a competitive edge. Also, a dedicated developer specializing
+                    in front-end (ReactJS) and back-end programming (JavaScript,
+                    Python), proficient in SQL and NoSQL databases, and
+                    enthusiastic about problem-solving and competitive
+                    programming.
                   </p>
                   <button onClick={handleDownloadCV}>
                     View CV
