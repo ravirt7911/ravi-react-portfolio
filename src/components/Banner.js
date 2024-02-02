@@ -70,26 +70,33 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Hey There</span>
+
                   <h1>
                     {`I'm Kamsu Ravi Teeja . A `}
                     <span className="wrap">{text}</span>
                   </h1>
-                  <p>
-                    Passionate data scientist and machine learning specialist
-                    skilled in Python for analytics, modeling, and using tools
-                    like Pandas, NumPy, Seaborn, scikit-learn, TensorFlow, and
-                    Keras. Experienced in SQL/NoSQL databases, end-to-end ML
-                    pipelines, and deployment. Enthusiastic problem-solver with
-                    a competitive edge. Also, a dedicated developer specializing
-                    in front-end (ReactJS) and back-end programming (JavaScript,
-                    Python), proficient in SQL and NoSQL databases, and
-                    enthusiastic about problem-solving and competitive
-                    programming.
-                  </p>
-                  <button onClick={handleDownloadCV}>
+                  <button
+                    onClick={handleDownloadCV}
+                    className="tagline"
+                    style={{ margin: "20px" }}
+                  >
                     View CV
                     <FilePerson size={25} />
                   </button>
+                  <p>
+                    Passionate individual with a strong background in front-end
+                    (ReactJS) and back-end programming (JavaScript, Python).
+                    Proficient in SQL and NoSQL databases, with hands-on
+                    experience in developing end-to-end solutions. A dedicated
+                    developer enthusiastic about problem-solving and competitive
+                    programming. Skilled in utilizing technologies such as
+                    Pandas, NumPy, Seaborn, scikit-learn, TensorFlow, and Keras
+                    for analytics and modeling. Capable of crafting robust and
+                    efficient ML pipelines. Experienced in deployment and adept
+                    at creating seamless user experiences. Bring a competitive
+                    edge to every challenge, thriving in the dynamic world of
+                    web development and problem-solving.
+                  </p>
                 </div>
               )}
             </TrackVisibility>

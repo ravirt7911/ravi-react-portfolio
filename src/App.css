@@ -318,11 +318,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #ffb84c;
 }
 .banner p {
-  background: linear-gradient(to right, #ff6b6b, #ffa981);
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
-  font-color: white;
+  font-weight: Bold;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
